@@ -98,7 +98,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class signup extends AppCompatActivity {
+public class signup2 extends AppCompatActivity {
 
     private EditText editTextNom , editTextEmail, editTextPassword;
     private Button registerButton;
@@ -107,7 +107,7 @@ public class signup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_signup2);
 
         editTextNom = findViewById(R.id.name);
         editTextEmail = findViewById(R.id.email);
@@ -118,7 +118,7 @@ public class signup extends AppCompatActivity {
         dbHelper = new DatabaseHelper(this);
 
         registerText.setOnClickListener(v -> {
-            Intent intent = new Intent(signup.this, login.class);
+            Intent intent = new Intent(signup2.this, login2.class);
             startActivity(intent);
         });
 
@@ -131,25 +131,25 @@ public class signup extends AppCompatActivity {
                 String password = editTextPassword.getText().toString().trim();
 
                 if (nom.isEmpty() || password.isEmpty() || email.isEmpty()) {
-                    Toast.makeText(signup.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signup2.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
                 } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                    Toast.makeText(signup.this, "Invalid email format", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signup2.this, "Invalid email format", Toast.LENGTH_SHORT).show();
                 } else {
                     // Vérifier si l'email existe déjà
                     if (dbHelper.isEmailExists(email)) {
-                        Toast.makeText(signup.this, "Email already exists", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(signup2.this, "Email already exists", Toast.LENGTH_SHORT).show();
                     } else {
 
                         long result = dbHelper.addUser(nom , email, password);
                         if (result != -1) {
-                            Toast.makeText(signup.this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(signup2.this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
 
-                            Intent intent = new Intent(signup.this, login.class);
+                            Intent intent = new Intent(signup2.this, login2.class);
                             intent.putExtra("role", "user"); // Passer le rôle pour la connexion
                             startActivity(intent);
                             finish(); // Fermer l'activité actuelle
                         } else {
-                            Toast.makeText(signup.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(signup2.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }

@@ -32,7 +32,7 @@
                 android:id="@+id/loginText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login "
+                android:text="Se connecter "
                 android:textAlignment="center"
                 android:textColor="@color/purple"
                 android:textSize="36sp"
@@ -46,7 +46,7 @@
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/baseline_mail"
                 android:drawablePadding="8dp"
-                android:hint="Email"
+                android:hint="Adresse mail"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
@@ -59,7 +59,7 @@
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
-                android:hint="Password"
+                android:hint="Mot de passe"
                 android:inputType="textPassword"
                 android:padding="8dp"
                 android:textColor="@color/black"
@@ -71,7 +71,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"
                 android:backgroundTint="@color/purple"
-                android:text="Login"
+                android:text="Connexion"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
 
@@ -89,14 +89,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="Not yet registered? SignUp now"
+            android:text="J'ai pas de compte? Créer un compte"
             android:textSize="14sp"
             android:textAlignment="center"
             android:id="@+id/signupText"
             android:textColor="@color/purple" />
 
         <View
-            android:layout_width="200dp"
+            android:layout_width="235dp"
             android:layout_height="2dp"
             android:layout_marginTop="-10dp"
             android:background="@color/purple" />

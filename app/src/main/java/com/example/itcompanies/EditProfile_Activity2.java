@@ -17,7 +17,7 @@ import androidx.appcompat.widget.AppCompatEditText;
 
 import java.io.IOException;
 
-public class EditProfile_Activity extends AppCompatActivity {
+public class EditProfile_Activity2 extends AppCompatActivity {
 
     private ImageView profileImageView;
     private AppCompatEditText nameEditText, emailEditText;
@@ -30,7 +30,7 @@ public class EditProfile_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_profile);
+        setContentView(R.layout.activity_edit_profile2);
 
         profileImageView = findViewById(R.id.imageView2);
         nameEditText = findViewById(R.id.name);
@@ -56,7 +56,7 @@ public class EditProfile_Activity extends AppCompatActivity {
         profileImageView.setOnClickListener(v -> openGallery());
 
         cancelButton.setOnClickListener(v -> {
-            Intent intent = new Intent(EditProfile_Activity.this, Profile_Activity.class);
+            Intent intent = new Intent(EditProfile_Activity2.this, Profile_Activity2.class);
             startActivity(intent);
             finish();
         });
@@ -110,7 +110,7 @@ public class EditProfile_Activity extends AppCompatActivity {
 
         if (isUpdated) {
             Toast.makeText(this, "Profil mis à jour avec succès", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(EditProfile_Activity.this, Profile_Activity.class);
+            Intent intent = new Intent(EditProfile_Activity2.this, Profile_Activity2.class);
             startActivity(intent);
         } else {
             Toast.makeText(this, "Erreur lors de la mise à jour du profil", Toast.LENGTH_SHORT).show();

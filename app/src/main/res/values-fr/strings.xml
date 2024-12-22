@@ -17,4 +17,22 @@
     <string name="profile">Profil</string>
     <string name="manage">Gérer les entreprises</string>
     <string name="logout">Se déconnecter</string>
+
+
+    <string name="nav_list">Liste des entreprises</string>
+    <string name="nav_profile">Profil</string>
+    <string name="nav_manage">Gérer l\'entreprise</string>
+    <string name="nav_logout">Se déconnecter</string>
+    <string name="choose_language">Choisir la langue</string>
+    <string name="language_english">Anglais</string>
+    <string name="language_french">Français</string>
+    <string name="toast_language_set">Langue définie sur : </string>
+    <string name="list_company_selected">Liste des entreprises sélectionnée</string>
+    <string name="profile_selected">Profil sélectionné</string>
+    <string name="manage_company_selected">Gérer l\'entreprise sélectionnée</string>
+    <string name="logout_selected">Déconnexion sélectionnée</string>
+
+
+    <string name="language_selection">Sélectionner la langue</string>
+
 </resources>

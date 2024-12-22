@@ -17,9 +17,23 @@
         android:theme="@style/Theme.ItCompanies"
         tools:targetApi="31">
         <activity
+            android:name=".signup2"
+            android:exported="false" />
+        <activity
+            android:name=".login2"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".HelpActivity"
             android:exported="false" />
-
         <activity
             android:name=".CompaniesManagementActivity"
             android:exported="false" />

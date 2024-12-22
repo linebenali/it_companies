@@ -160,7 +160,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.navigation.NavigationView;
 
-public class Profile_Activity extends AppCompatActivity {
+public class Profile_Activity2 extends AppCompatActivity {
 
     private ShapeableImageView profileImageView;
     private Button nameButton, emailButton , editButton;
@@ -170,7 +170,7 @@ public class Profile_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_profile2);
 
         // Initialisation des vues
         profileImageView = findViewById(R.id.imageView2);
@@ -196,16 +196,16 @@ public class Profile_Activity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(item -> {
             if (item.getItemId() == R.id.nav_list) {
                 Toast.makeText(this, "List company selected", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this, MainActivity2.class));
             } else if (item.getItemId() == R.id.nav_profile) {
                 Toast.makeText(this, "Profile selected", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, Profile_Activity.class));
+                startActivity(new Intent(this, Profile_Activity2.class));
             } else if (item.getItemId() == R.id.nav_manage) {
                 Toast.makeText(this, "Manage company selected", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, CompaniesManagementActivity.class));
             } else if (item.getItemId() == R.id.nav_logout) {
                 Toast.makeText(this, "Logout selected", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, login.class));
+                startActivity(new Intent(this, login2.class));
             }
             drawerLayout.closeDrawers();
             return true;
@@ -227,13 +227,13 @@ public class Profile_Activity extends AppCompatActivity {
         }
 
         editButton.setOnClickListener(v -> {
-            Intent intent = new Intent(Profile_Activity.this, EditProfile_Activity.class);
+            Intent intent = new Intent(Profile_Activity2.this, EditProfile_Activity2.class);
             startActivity(intent);
         });
 
         // Ajout du gestionnaire de clic pour le bouton Help
         helpButton.setOnClickListener(v -> {
-            Intent intent = new Intent(Profile_Activity.this, HelpActivity.class); // Intent pour HelpActivity
+            Intent intent = new Intent(Profile_Activity2.this, HelpActivity.class); // Intent pour HelpActivity
             startActivity(intent); // Démarre HelpActivity
         });
     }

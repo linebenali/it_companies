@@ -31,15 +31,15 @@
         <!-- Icône de suppression -->
         <ImageView
             android:id="@+id/delete_button"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="35dp"
+            android:layout_height="44dp"
             android:src="@drawable/ic_delate"></ImageView>
 
         <!-- Icône de modification -->
         <ImageView
             android:id="@+id/update_button"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="35dp"
+            android:layout_height="44dp"
             android:src="@drawable/ic_update"></ImageView>
 
     </LinearLayout>

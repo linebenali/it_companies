@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">IT Companies</string>
+    <string name="drawer_open">Open Menu</string>
+    <string name="drawer_close">Close Menu</string>
+    <string name="login">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="signup_text">Not yet registered? SignUp Now</string>
+    <string name="error_empty_fields">Please enter an email and password</string>
+    <string name="error_invalid_email">Invalid email format</string>
+    <string name="error_incorrect_credentials">Incorrect email or password</string>
+    <string name="success_login">Login successful</string>
+
+    <string name="list_companies">List Companies</string>
+    <string name="profile">Profile</string>
+    <string name="manage">Manage Company</string>
+    <string name="logout">Logout</string>
+
+
+</resources>

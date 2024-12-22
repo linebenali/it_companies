@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/loginbkg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- CardView container for the form -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            android:background="@drawable/custom_edittext">
+
+            <!-- Inner LinearLayout for the form fields -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp">
+
+                <!-- Company Name EditText -->
+                <EditText
+                    android:id="@+id/etCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Company name"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:padding="8dp" />
+
+                <!-- Phone Number EditText -->
+                <EditText
+                    android:id="@+id/etCompanyPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_phone_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Phone"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:padding="8dp"
+                    android:layout_marginTop="20dp" />
+
+                <!-- Website EditText -->
+                <EditText
+                    android:id="@+id/etCompanyWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_web_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Website"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:padding="8dp"
+                    android:layout_marginTop="20dp" />
+
+                <!-- Service EditText -->
+                <EditText
+                    android:id="@+id/etCompanyService"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_home_repair_service_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Services"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:padding="8dp"
+                    android:layout_marginTop="20dp" />
+
+                <!-- Email EditText -->
+                <EditText
+                    android:id="@+id/etCompanyMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_mail"
+                    android:drawablePadding="8dp"
+                    android:hint="Mail"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:padding="8dp"
+                    android:layout_marginTop="20dp" />
+
+                <!-- Location EditText -->
+                <EditText
+                    android:id="@+id/etCompanyLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_add_location_24"
+                    android:hint="Location"
+                    android:textColor="@color/black"
+                    android:drawablePadding="8dp"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:padding="8dp"
+                    android:layout_marginTop="20dp" />
+
+                <!-- Button to choose image -->
+                <ImageView
+                    android:id="@+id/ivSelectedImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="187dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/placeholderr"
+                    android:scaleType="centerCrop" />
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/btnSaveCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/purple"
+                    app:cornerRadius="20dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</LinearLayout>

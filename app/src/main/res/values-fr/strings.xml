@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Entreprises IT</string>
+    <string name="drawer_open">Ouvrir le menu</string>
+    <string name="drawer_close">Fermer le menu</string>
+    <string name="login">Se connecter</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="login_button">Se connecter</string>
+    <string name="signup_text">Pas encore inscrit ? Inscrivez-vous maintenant</string>
+    <string name="error_empty_fields">Veuillez entrer un email et un mot de passe</string>
+    <string name="error_invalid_email">Format d\'email invalide</string>
+    <string name="error_incorrect_credentials">Email ou mot de passe incorrect</string>
+    <string name="success_login">Connexion réussie</string>
+
+    <string name="list_companies">Liste des entreprises</string>
+    <string name="profile">Profil</string>
+    <string name="manage">Gérer les entreprises</string>
+    <string name="logout">Se déconnecter</string>
+</resources>

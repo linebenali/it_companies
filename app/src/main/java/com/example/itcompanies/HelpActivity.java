@@ -1,6 +1,8 @@
 package com.example.itcompanies;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,16 +16,22 @@ public class HelpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
+        Button cancelButton = findViewById(R.id.cancel_button);
 
-        // Obtenez la vue racine
+
         LinearLayout rootLayout = findViewById(R.id.rootLayout);
 
-        // Appliquez l'écouteur pour gérer les fenêtres système
         ViewCompat.setOnApplyWindowInsetsListener(rootLayout, (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            // Ajoutez les insets (espacement) aux marges de la vue
+
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        cancelButton.setOnClickListener(v -> {
+            Intent intent = new Intent(HelpActivity.this, Profile_Activity.class);
+            startActivity(intent);
+            finish();
         });
     }
 }

@@ -110,7 +110,7 @@
                             android:layout_width="170dp"
                             android:layout_height="60dp"
                             android:backgroundTint="@color/purple"
-                            android:text="Save Changes"
+                            android:text="Save"
                             android:textColor="@color/white"
                             android:textSize="18sp"
                             android:textStyle="bold"
